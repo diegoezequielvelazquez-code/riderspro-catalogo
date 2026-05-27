@@ -1,93 +1,139 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>RidersPro Catalogo</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
-    body{
-      margin:0;
-      font-family:Arial;
-      background:#f5f5f5;
-    }
+<title>RidersPro Catalogo</title>
 
-    header{
-      background:black;
-      color:white;
-      padding:20px;
-      text-align:center;
-      border-bottom:5px solid #00ff66;
-    }
+<style>
 
-    h1{
-      margin:0;
-    }
+body{
+margin:0;
+font-family:Arial;
+background:#f3f3f3;
+}
 
-    .grid{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-      gap:20px;
-      padding:20px;
-    }
+header{
+background:#000;
+padding:25px;
+text-align:center;
+border-bottom:6px solid #00ff66;
+}
 
-    .card{
-      background:white;
-      border-radius:20px;
-      overflow:hidden;
-      box-shadow:0 4px 15px rgba(0,0,0,0.1);
-    }
+header h1{
+color:white;
+margin:0;
+font-size:38px;
+}
 
-    .card img{
-      width:100%;
-      height:250px;
-      object-fit:cover;
-    }
+header p{
+color:#00ff66;
+margin-top:10px;
+}
 
-    .info{
-      padding:15px;
-    }
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+gap:20px;
+padding:20px;
+}
 
-    .precio{
-      color:#00aa44;
-      font-size:28px;
-      font-weight:bold;
-    }
+.card{
+background:white;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 5px 20px rgba(0,0,0,0.1);
+transition:0.2s;
+}
 
-    .btn{
-      display:block;
-      background:black;
-      color:white;
-      text-decoration:none;
-      text-align:center;
-      padding:12px;
-      border-radius:12px;
-      margin-top:10px;
-      font-weight:bold;
-    }
-  </style>
+.card:hover{
+transform:translateY(-5px);
+}
+
+.card img{
+width:100%;
+height:280px;
+object-fit:cover;
+}
+
+.info{
+padding:15px;
+}
+
+.info h2{
+margin:0;
+font-size:22px;
+}
+
+.precio{
+font-size:34px;
+font-weight:bold;
+color:#00aa44;
+margin-top:10px;
+}
+
+.contado{
+background:#00ff66;
+display:inline-block;
+padding:6px 12px;
+border-radius:10px;
+font-weight:bold;
+margin-top:10px;
+}
+
+.btn{
+display:block;
+text-align:center;
+background:black;
+color:white;
+text-decoration:none;
+padding:14px;
+border-radius:14px;
+margin-top:15px;
+font-weight:bold;
+}
+
+.btn:hover{
+background:#00aa44;
+}
+
+</style>
+
 </head>
+
 <body>
 
 <header>
-  <h1>RidersPro Catalogo</h1>
-  <p>Productos sincronizados automaticamente</p>
+<h1>RidersPro</h1>
+<p>Catalogo automatico sincronizado</p>
 </header>
 
 <div class="grid">
 
-  <div class="card">
-    <img src="https://picsum.photos/400/400" alt="">
-    <div class="info">
-      <h2>Producto ejemplo</h2>
-      <div class="precio">$180.000</div>
+<div class="card">
 
-      <a class="btn"
-      href="https://wa.me/5493492668236">
-      Consultar
-      </a>
-    </div>
-  </div>
+<img src="./productos/tuimagen.jpg">
+
+<div class="info">
+
+<h2>Producto RidersPro</h2>
+
+<div class="contado">
+CONTADO
+</div>
+
+<div class="precio">
+$180.000
+</div>
+
+<a class="btn"
+href="https://wa.me/5493492668236">
+Consultar
+</a>
+
+</div>
+</div>
 
 </div>
 
